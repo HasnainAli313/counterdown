@@ -1,7 +1,7 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 function TaskHistory() {
-  const history = useSelector((state) => state.tasks.history) || []; // Default to an empty array
+  const history = useSelector((state) => state.tasks.history) || [];
 
   return (
     <div>
