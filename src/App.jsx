@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import tasksReducer from "./tasksSlice";  
-import TaskBoard from "./pages/TaskBoard";
-import TaskHistory from "./pages/TaskHistory";
+
 import Home from "./pages/Home";
+import TaskBoard from "./pages/taskBoard";
 
 const store = configureStore({
   reducer: {
@@ -18,8 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/taskboard" element={<TaskBoard />} />
-          <Route path="/taskhistory" element={<TaskHistory />} />
+          <Route path="/taskboard" element={<TaskBoard/>} />
         </Routes>
       </Router>
     </Provider>
