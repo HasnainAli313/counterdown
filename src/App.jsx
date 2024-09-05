@@ -4,7 +4,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import tasksReducer from "./tasksSlice";  
 
 import Home from "./pages/Home";
-import TaskBoard from "./pages/taskBoard";
+import TaskBoard from "./pages/TaskBoard";
 
 const store = configureStore({
   reducer: {
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/taskboard" element={<TaskBoard/>} />
+          <Route path="/askboard" element={<TaskBoard/>} />
         </Routes>
       </Router>
     </Provider>
