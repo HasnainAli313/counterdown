@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/askboard" element={<TaskBoard/>} />
+          <Route path="/taskboard" element={<TaskBoard/>} />
         </Routes>
       </Router>
     </Provider>
