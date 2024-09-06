@@ -123,7 +123,7 @@ function TaskBoard() {
           Sign Out
         </button>
       </div>
-      <div className="border p-5 flex gap-10 justify-around">
+      <div className="border p-5 flex md:flex-nowrap flex-wrap gap-10 justify-around">
         {["todo", "inProgress", "completed"].map((section) => {
           console.log(`Rendering section: ${section}`);
           console.log(`Tasks for ${section}:`, tasks[section]);
