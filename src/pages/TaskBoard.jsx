@@ -128,7 +128,7 @@ function TaskBoard() {
           console.log(`Rendering section: ${section}`);
           console.log(`Tasks for ${section}:`, tasks[section]);
           return (
-            <div key={section} className="border border-blue-400 p-5 font-semibold rounded-2xl bg-gray-100 w-1/3">
+            <div key={section} className="border border-blue-400 p-5 font-semibold rounded-2xl bg-gray-100 md:w-1/3">
               <h2 className="md:text-3xl text-xl mb-4">{capitalize(section)}</h2>
               {tasks[section] ? (
                 tasks[section].map((task) => (
