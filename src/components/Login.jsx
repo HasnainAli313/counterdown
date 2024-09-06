@@ -23,7 +23,7 @@ function Login() {
   return (
     <>
     
-    <div className="credentials border  border-gray-500 p-5 rounded-xl flex justify-center text-center mt-10 flex-col w-[30%] m-auto">
+    <div className="credentials border   border-gray-500 p-5 rounded-xl flex justify-center text-center mt-10 flex-col md:w-[30%] m-auto">
       <h2 className="text-3xl font-semibold p-2 ">Login</h2>
       <input className="border border-black p-1 m-1" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
       <input className="border border-black p-1 m-1" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
